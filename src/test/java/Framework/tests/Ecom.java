@@ -29,7 +29,7 @@ public class Ecom extends Baseclass {
 		ProductCatalogue plp = new ProductCatalogue(driver);
 		List<WebElement> all = plp.getProductList();
 
-		//Thread.sleep(2000);
+		//Thread.sleep(2000); //hiii
 		for (int i = 0; i < all.size(); i++) {
 			String pro = all.get(i).getText();
 			if (pro.equalsIgnoreCase(product)) {
